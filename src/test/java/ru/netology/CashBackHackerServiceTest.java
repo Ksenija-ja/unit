@@ -43,6 +43,17 @@ public class CashBackHackerServiceTest {
 
     }
 
+    @Test
+    public void remain0() {
+        CashBackHackerService service = new CashBackHackerService();
+        int amount = 1000;
+
+        int actual = service.remain(amount);
+        int expected = 0;
+
+        assertEquals(expected, actual);
+
+    }
 
 
-}
+    }
